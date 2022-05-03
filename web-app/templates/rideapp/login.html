@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/myhomestyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Ride App</h1>
+        </div>
+        <div class="login">
+            <form class="form-horizontal" method="post" action="/rideapp/login">
+                <div class="control-group">
+                  <label class="control-label" for="username">Username</label>
+                  <div class="controls">
+                    <input name="username" type="text" id="username">
+                  </div>
+                  <p id="userformat"></p>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputPassword">Password</label>
+                  <div class="controls">
+                    <input name="password" type="password" id="inputPassword">
+                  </div>
+                  <p id="pwdformat"></p>
+                </div>
+                <div class="control-group">
+                  <div class="controls btn-section">
+                    <button type="submit" class="btn" id="btn">Sign in</button>
+                  </div>
+                </div>
+                {% csrf_token %}
+              </form>
+        </div>
+        <div class="register-tips">
+            <div class="tip1">
+                <p>Still not a user? </p>
+            </div>
+            <div class="tip2">
+              <p><a href="/rideapp/register">Register</a></p>
+            </div>
+        </div>
+        {% if login_error %}
+        <div class="wrong-user">
+          <p>{{ login_error }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../static/js/myhomeaction.js"></script>

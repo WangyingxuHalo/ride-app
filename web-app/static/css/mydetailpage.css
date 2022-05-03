@@ -1,0 +1,176 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.container {
+    width: 644px;
+    height: 531px;
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #1396db;
+    border-color: #1396db;
+    border-radius: 15px;
+}
+
+.section {
+    margin: 10px;
+    width: 350px;
+}
+
+.inner-section:hover {
+    cursor: pointer;
+}
+.inner-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border:1px solid #1396db;
+    border-radius: 15px;
+}
+
+.inner-section img {
+    height: 80px;
+    width: 80px;
+}
+
+.inner-section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input[type=text] {
+    width: 70%;
+    margin: 8px 10px;
+    box-sizing: border-box;
+}
+
+.req-title {
+    margin-left: 10px;
+}
+
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.layui-layer-setwin {
+    display: none;
+}
+
+.info-section {
+    margin: 10px auto;
+    width: 60%;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px auto;
+    width: 240px;
+}
+
+.start {
+    height: 30px;
+    margin: auto 2px;
+}
+
+#numpeople {
+    height: 30px;
+    margin: auto 2px;
+    width: 70%;
+    margin: 8px 16px;
+}
+
+#destination, #vehicle, #share{
+    margin: 8px 14px;
+}
+
+table {
+    width: 90%;
+    background: #ccc;
+    margin: 10px auto;
+    border-collapse: collapse;
+    margin-left: 5px;
+}               
+th,td {
+    height: 25px;
+    line-height: 25px;
+    min-width: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+}       
+th {
+    background: #eee;
+    font-weight: normal;
+}       
+tr {
+    background: #fff;
+}       
+
+td a:hover {
+    color: #06f;
+    text-decoration: underline;
+}
+
+.frame {
+    height: 190px;
+    overflow-y: scroll;
+}
+
+.his-title {
+    margin-top: 15px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.display-section p {
+    margin: 10px 20px;
+}
+
+.time-section1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+[2022-02-04 17:07:58,869] [autoreload.py:643] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-04 17:19:10,314] [autoreload.py:643] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-04 17:19:18,555] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/login HTTP/1.0" 200 2579
+[2022-02-04 17:20:15,675] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/login HTTP/1.0" 200 2579
+[2022-02-04 17:20:21,936] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /static/js/myhomeaction.js HTTP/1.0" 200 1425
+[2022-02-04 17:27:21,113] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/login HTTP/1.0" 200 2579
+[2022-02-04 18:22:44,169] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/register HTTP/1.0" 200 2701
+[2022-02-04 18:22:44,481] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /static/css/myhomestyle.css HTTP/1.0" 200 481
+[2022-02-04 18:22:44,727] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /static/js/myregisaction.js HTTP/1.0" 200 1614
+[2022-02-04 18:24:59,027] [autoreload.py:643] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-04 23:17:55,855] [autoreload.py:643] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-04 23:17:59,857] [log.py:225] [log:log_response] [WARNING]- Not Found: /
+[2022-02-04 23:17:59,858] [basehttp.py:179] [basehttp:log_message] [WARNING]- "GET / HTTP/1.0" 404 2158
+[2022-02-04 23:18:07,806] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/login HTTP/1.0" 200 2579
+[2022-02-04 23:18:09,263] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/login HTTP/1.0" 200 2579
+[2022-02-04 23:18:18,592] [basehttp.py:179] [basehttp:log_message] [INFO]- "POST /rideapp/login HTTP/1.0" 200 2684
+[2022-02-04 23:18:22,989] [basehttp.py:179] [basehttp:log_message] [INFO]- "POST /rideapp/login HTTP/1.0" 200 2684
+[2022-02-04 23:18:24,023] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/register HTTP/1.0" 200 2701
+[2022-02-04 23:18:38,829] [basehttp.py:179] [basehttp:log_message] [INFO]- "POST /rideapp/register HTTP/1.0" 302 0
+[2022-02-04 23:18:38,895] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/home HTTP/1.0" 200 1846
+[2022-02-04 23:18:39,759] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/user HTTP/1.0" 200 2178
+[2022-02-04 23:18:40,337] [views.py:173] [views:search_user_history_order] [INFO]- Request User Ride list by user yingxu
+[2022-02-04 23:18:40,344] [basehttp.py:179] [basehttp:log_message] [INFO]- "POST /rideapp/user/history HTTP/1.0" 200 29
+[2022-02-04 23:19:03,085] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/home HTTP/1.0" 200 1846
+[2022-02-04 23:19:04,352] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/home HTTP/1.0" 200 1846
+[2022-02-04 23:19:07,710] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/home HTTP/1.0" 200 1846
+[2022-02-04 23:19:10,012] [basehttp.py:179] [basehttp:log_message] [INFO]- "GET /rideapp/user HTTP/1.0" 200 2178

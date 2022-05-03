@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="../static/css/myhomestyle.css">
+</head>
+<body>
+  <a href="/rideapp/home" class="back">Back to Home</a>
+    <div class="container">
+        <div class="title">
+            <h1>Driver Register</h1>
+        </div>
+        <div class="login">
+            <form class="form-horizontal" method="post" action="/rideapp/driver/register">
+              <div class="control-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="controls">
+                  <input name="name" type="text" id="name">
+                </div>
+            </div>
+              <div class="control-group">
+                  <label class="control-label" for="vehicle">Vehicle Type</label>
+                  <div class="controls">
+                    <input name="vehicle" type="text" id="vehicle">
+                  </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="platenum">Vehicle Plate Number</label>
+                    <div class="controls">
+                      <input name="platenum" type="text" id="platenum">
+                    </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="maxcap">Maximum Capacity</label>
+                  <div class="controls">
+                    <select name="maxcap" id="maxcap"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="info">Other Information</label>
+                  <div class="controls">
+                    <input name="info" type="text" id="info">
+                  </div>
+              </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <button type="submit" class="btn">Register</button>
+                  </div>
+                </div>
+                {% csrf_token %}
+              </form>
+        </div>
+        {% if regis_error %}
+        <div class="wrong-user">
+          <p>{{ regis_error }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../static/js/myregisaction.js"></script>

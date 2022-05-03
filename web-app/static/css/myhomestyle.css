@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+}
+.container {
+    width: 380px;
+    height: 431px;
+    padding: 0;
+    border:1px solid #1396db;
+    border-color: #1396db;
+    border-radius: 15px;
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-tips {
+    display: flex;
+    flex-direction: row;
+}

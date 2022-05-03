@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="../static/css/mydetailpage.css">
+            <script src="https://www.layuicdn.com/layui-v2.5.6/layui.js"></script>
+</head>
+<body>
+    <a href="/rideapp/home" class="back">Back to Home</a>
+    <div class="container">
+        <div class="welcome">
+            <h1>Driver</h1>
+        </div>
+        <div class="section">
+            <div class="inner-section" onclick="showStatus()">
+                <img src="https://s4.ax1x.com/2022/01/18/7wE461.png"\>
+                <p>My Status</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner-section" onclick="search_available_rides()">
+                <img src="https://s4.ax1x.com/2022/01/18/7wE461.png"\>
+                <p>Search a Ride</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inner-section" onclick="editInfo()">
+                <img src="https://s4.ax1x.com/2022/01/18/7wE461.png"\>
+                <p>Edit My Information</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../static/js/mydriveractions.js"></script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="../../static/css/mywelcome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1>Welcome, {{ user.username }}</h1>
+        </div>
+        <div class="sub-container">
+            <div class="outer-section">
+                <a href="/rideapp/user">
+                    <div class="section user">
+                        <img src="https://s4.ax1x.com/2022/01/18/7wEhlR.png" />
+                        <h3>User</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="outer-section">
+                <a href="/rideapp/driver">
+                    <div class="section driver">
+                        <img src="https://s4.ax1x.com/2022/01/18/7wE461.png" />
+                        <h3>Driver</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="/rideapp/logout" class="button-logout" id="btn">Log Out</a>
+    </div>
+</body>
+</html>
