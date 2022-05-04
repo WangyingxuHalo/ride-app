@@ -1,11 +1,11 @@
 # Ride Sharing App
 
 ## Developer
-Chenglong Tang ct265 <br>
 Yingxu Wang yw473 <br>
+Chenglong Tang ct265 <br>
 
 ## Introduction
-For this project, we use Django to implement a ride sharing app. <br>
+For this project, we use Django to implement both front-end and back-end of ride sharing app. <br>
 
 ## Functions
 This app has many functions: <br>
