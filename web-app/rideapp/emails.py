@@ -1,7 +1,7 @@
 from notipyer.email_notify import set_email_config,send_email
 def send_email_to(to_recipients,subject,body):
-    SENDER_EMAIL = 'tangcl998@gmail.com'
-    SENDER_PASS = 'kyjgdivcwocvijmn'
+    SENDER_EMAIL = 'xx@xx.com'
+    SENDER_PASS = 'xx'
     set_email_config(SENDER_EMAIL, SENDER_PASS)
     cc_recipients = None
     bcc_recipients = None
